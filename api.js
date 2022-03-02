@@ -223,7 +223,6 @@ countriesList.addEventListener('click',(e)=>{
     }
 });
 
-// back button clicked
 detailsElement.addEventListener('click',(e)=>{
     let target = e.target.classList.contains('back');
     if(target){
