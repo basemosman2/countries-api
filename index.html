@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="countries details api will help you to discover countries all over world">
+    <meta name="keywords" content="Countries">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries</title>
+    <link rel="stylesheet" href="style/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Where in the World?</h1>
+        <div class="moodBox">
+            <i class="fa-regular fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            <p class="moodStats">Light Mood</p>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="cFilter">
+                <div class="inputBox">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search for a country...">
+                </div>
+                <div class="regions">
+                    <div class="region-box">
+                        <span>Filter Region</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="continents">
+                        <li data-region="all">all</li>
+                        <li data-region="africa">Africa</li>
+                        <li data-region="europe">Europe</li>
+                        <li data-region="asia">Asia</li>
+                        <li data-region="americas">americas</li>
+                        <li data-region="oceania">Oceania</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="countriesList"></div>
+    </main>
+    <div class="details"></div>
+    <script src="app.js"></script>
+    <script src="api.js"></script>
+</body>
+</html>
