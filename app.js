@@ -20,11 +20,11 @@ moodStatus.addEventListener('click',()=>{
 
 function changeMoodStatus(){
     if (moodStatus.classList.contains('active')) {
-        statusText.innerHTML = 'Dark Mood';
+        statusText.innerHTML = 'Light Mood';
         bodyElement.classList.add('darkMood');
 
     }else{
-        statusText.innerHTML = 'Light Mood';
+        statusText.innerHTML = 'Dark Mood';
         bodyElement.classList.remove('darkMood');
     }
 }

@@ -94,17 +94,17 @@ header{
             margin-left: 0.6em;
             font-weight: 400;
         }
-        .fa-moon{
+        .fa-sun{
             display: none;
         }
     }
 
     .moodBox.active{
         .fa-moon{
-            display: block;
+            display: none;
         }
         .fa-sun{
-            display: none;
+            display: block;
         }
     }
 }
